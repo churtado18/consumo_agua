@@ -35,4 +35,4 @@ Link: https://churtado18.github.io/consumo_agua/index.html
 
 MIT License
 
-Este proyecto está bajo la licencia [MIT](https://github.com/churtado18/consumo_agua/blob/gh-pages/LICENSE) 
+Este proyecto está bajo la licencia [MIT](https://github.com/churtado18/consumo_agua/blob/master/LICENSE) 
