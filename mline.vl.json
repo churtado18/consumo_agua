@@ -3,7 +3,7 @@
   "description": "Highlight multiple lines",
   "width": 800,
   "height": 425,
-  "data": {"url": "consumo_agua_2.csv"},
+  "data": {"url": "consumo_agua.csv"},
   "config": {"point": {"opacity": 0.0}},        
   "layer": [
     {
@@ -14,8 +14,8 @@
       },
       "mark": "point",
       "encoding": {
-        "x": {"field": "ANIO", "type": "temporal", 
-              "axis": {"format": "%Y", "labelAngle": 0}},
+        "x": {"field": "MES", "type": "temporal", 
+              "axis": {"format": "%m", "labelAngle": 0}},
         "y": {"field": "PROMEDIO", "type": "quantitative"},
         "color": {"field": "ESTRATO", "type": "nominal"}
       }
@@ -23,7 +23,7 @@
     {
       "mark": "line",
       "encoding": {
-        "x": {"field": "ANIO", "type": "temporal", "axis": null},
+        "x": {"field": "MES", "type": "temporal", "axis": null},
         "y": {"field": "PROMEDIO", "type": "quantitative"},
         "color": {"field": "ESTRATO", "type": "nominal"},
         "size": {"condition": {

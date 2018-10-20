@@ -35,48 +35,45 @@
 </head>
 
 <body> 
-<h1> Calentamiento Global</h1> 
+<h1> Consumo de agua en Manizales </h1> 
 <h5>Carmelo Hurtado Orozco - Código: 201727300</h5>
 <h5></h5>
 
 <p>
-  El aumento de la temperatura ha causado muchos problemas en nuestro planeta, la falta  de conciencia y de acciones efectivas que reviertan la situación, aumentan la magnitud del problema y nos enfrentará a consecuencias devastadoras en el futuro.
+  Analizaremos el consumo promedio de agua en la ciudad de Manizales, teniendo en cuenta el estrato socioeconómico y segmento de organizaciones.
 
 <br/>
-A continuación podrá observar el comportamiento del cambio climático a través del tiempo. 
+A continuación podrá observar el comportamiento del consumo promedio de agua por mes, que comprenden los años 2016, 2017 y 2018. 
 
 <br/>
 source: 
 <br/>
-GISTEMP Team, 2018: Análisis de temperatura de superficie GISS (GISTEMP) . NASA Goddard Institute for Space Studies. El conjunto de datos accedió a 2018-10-05 en <a href="https://data.giss.nasa.gov/gistemp/">gistemp</a>.
-Hansen, J., R. Ruedy, M. Sato y K. Lo, 2010: Cambio de temperatura de la superficie global , Rev. Geophys. , 48 , RG4004, doi: 10.1029 / 2010RG000345.</p>
+   <a href="https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/CONSUMO-PROMEDIO-Y-NUMERO-DE-INMUEBLES-POR-A-O-MES/syj9-9uf5">E.S.P. Aguas de Manizales S.A.</a>.
 
-<h3>¿Cuál es la zona que más ha contribuido al cambio climático?</h3> 
+
+<h3>¿Que grupo de usuarios según su estrato socioeconómico consume más agua?</h3> 
   <div id="vis"></div>
 
   <p>
-   En la visualización anterior, podemos observar que en los primero 15 años (1880 - 1895) el hemisferio sur tuvo temperaturas mayores que el hemisferio norte, pero a medida que aumenta la línea de tiempo, en el hemisferio norte se observa una mayor contribución al cambio climático, de hecho en los último 18 años (2000) esta contribución ha aumentado considerablemente. 
-  También se observa que en el año 1910, antes de la primera guerra mundial, ambos hemisferios registraron bajas temperaturas y durante la guerra tuvo un aumento considerable.
-    Por último, es claro que a medida que pasan los años, aumenta la temperatura en todo el mundo.
+   En la visualización anterior, podemos observar que los sectores oficiales e industriales, fueron los que más consumieron agua durante los años 2016, 2017 y 2018 con una gran diferencia de los demás sectores, además, cabe aclarar que aunque durante el primer semestre del año registran su consumo más alto, en el segundo semestre tienden a disminuir su consumo considerablemente.
+   <br/><br/>
+
+   Los estratos 1,2,3 y 4 mantienen una tendencia similar de consumo durante todo el año.
+   <br/><br/>
+
+   Los sectores de estrato 5 y 6 son los que menos consumen agua.
+   <br/><br/>
+
+   Todos los estratos consumen mayor agua durante el primer semestre del año.
+   <br/><br/>
+
+   Se debe llevar un mayor control por parte de los entes gubernamentales, para la disminución del consumo de agua en los sectores oficiales e industriales, debido a que registran valores muy altos.
 </p>
 
 
-<h3>¿En qué mes se registran mayores temperaturas?</h3> 
-
-   <div id="vis2"></div>
-
-   <p>
-    En la visualización anterior, podemos observar que en el mes de marzo se registraron las temperaturas más altas, además, a medida que aumenta la línea de tiempo, esta aumenta considerablemente. Por ejemplo, entre los años 1990 y 2015 se evidencias picos de temperatura.
-    En diciembre del año 1915, durante la primera guerra mundial, se registró la temperatura más baja, de igual forma, durante la segunda guerra mundial (1939 y 1945) se registró uno de los picos más altos del mes de diciembre.
-     
-   </p>
-
-
   <script>  
-    const spec = "mline.vl.json"
-    const spec2 = "mline2.vl.json"
+    const spec = "mline.vl.json"   
     var opts = {"actions": {export: false, source: false, editor: false}};
-    vega.embed('#vis', spec, opts);
-    vega.embed('#vis2', spec2, opts);
+    vega.embed('#vis', spec, opts);  
   </script>
 </body>
