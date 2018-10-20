@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head> 
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/3.0.0-rc5/vega.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/2.0.0-beta.11/vega-lite.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.0.0-beta.19/vega-embed.js"></script>
+  <meta charset="utf-8">
+
+  <style type="text/css">
+   
+   h1 {
+    font-family:verdana;    
+    color: #256d7b;
+   } 
+
+   h3 
+   {
+    font-family:verdana;   
+    color: #256d7b; 
+   } 
+
+   h5
+   {
+    font-family:verdana; 
+    color: #256d7b;   
+   } 
+
+   p
+   {
+      font-family:courier;
+    }
+
+  </style>
+
+</head>
+
+<body> 
+<h1> Calentamiento Global</h1> 
+<h5>Carmelo Hurtado Orozco - Código: 201727300</h5>
+<h5></h5>
+
+<p>
+  El aumento de la temperatura ha causado muchos problemas en nuestro planeta, la falta  de conciencia y de acciones efectivas que reviertan la situación, aumentan la magnitud del problema y nos enfrentará a consecuencias devastadoras en el futuro.
+
+<br/>
+A continuación podrá observar el comportamiento del cambio climático a través del tiempo. 
+
+<br/>
+source: 
+<br/>
+GISTEMP Team, 2018: Análisis de temperatura de superficie GISS (GISTEMP) . NASA Goddard Institute for Space Studies. El conjunto de datos accedió a 2018-10-05 en <a href="https://data.giss.nasa.gov/gistemp/">gistemp</a>.
+Hansen, J., R. Ruedy, M. Sato y K. Lo, 2010: Cambio de temperatura de la superficie global , Rev. Geophys. , 48 , RG4004, doi: 10.1029 / 2010RG000345.</p>
+
+<h3>¿Cuál es la zona que más ha contribuido al cambio climático?</h3> 
+  <div id="vis"></div>
+
+  <p>
+   En la visualización anterior, podemos observar que en los primero 15 años (1880 - 1895) el hemisferio sur tuvo temperaturas mayores que el hemisferio norte, pero a medida que aumenta la línea de tiempo, en el hemisferio norte se observa una mayor contribución al cambio climático, de hecho en los último 18 años (2000) esta contribución ha aumentado considerablemente. 
+  También se observa que en el año 1910, antes de la primera guerra mundial, ambos hemisferios registraron bajas temperaturas y durante la guerra tuvo un aumento considerable.
+    Por último, es claro que a medida que pasan los años, aumenta la temperatura en todo el mundo.
+</p>
+
+
+<h3>¿En qué mes se registran mayores temperaturas?</h3> 
+
+   <div id="vis2"></div>
+
+   <p>
+    En la visualización anterior, podemos observar que en el mes de marzo se registraron las temperaturas más altas, además, a medida que aumenta la línea de tiempo, esta aumenta considerablemente. Por ejemplo, entre los años 1990 y 2015 se evidencias picos de temperatura.
+    En diciembre del año 1915, durante la primera guerra mundial, se registró la temperatura más baja, de igual forma, durante la segunda guerra mundial (1939 y 1945) se registró uno de los picos más altos del mes de diciembre.
+     
+   </p>
+
+
+  <script>  
+    const spec = "mline.vl.json"
+    const spec2 = "mline2.vl.json"
+    var opts = {"actions": {export: false, source: false, editor: false}};
+    vega.embed('#vis', spec, opts);
+    vega.embed('#vis2', spec2, opts);
+  </script>
+</body>

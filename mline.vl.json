@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "Highlight multiple lines",
+  "width": 800,
+  "height": 425,
+  "data": {"url": "consumo_agua_2.csv"},
+  "config": {"point": {"opacity": 0.0}},        
+  "layer": [
+    {
+      "selection": {
+        "highlight": {"type": "single", 
+          "on": "mouseover", 
+          "nearest": "true", "fields": ["ESTRATO"]}
+      },
+      "mark": "point",
+      "encoding": {
+        "x": {"field": "ANIO", "type": "temporal", 
+              "axis": {"format": "%Y", "labelAngle": 0}},
+        "y": {"field": "PROMEDIO", "type": "quantitative"},
+        "color": {"field": "ESTRATO", "type": "nominal"}
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "ANIO", "type": "temporal", "axis": null},
+        "y": {"field": "PROMEDIO", "type": "quantitative"},
+        "color": {"field": "ESTRATO", "type": "nominal"},
+        "size": {"condition": {
+          "selection": {"not": "highlight"}, "value": 1
+          }, 
+          "value": 3
+        }  
+      }
+    }
+  ]
+}
