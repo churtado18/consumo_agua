@@ -1,7 +1,7 @@
 # Consumo promedio de agua en Manizales
 Análisis del consumo de agua en Manizales según estrato socioeconómico.
 
-![alt text](https://pbs.twimg.com/media/Dp8DsUbWkAA2gVz.jpg)
+![alt text](https://pbs.twimg.com/media/Dp8SUQmWoAAUjXi.jpg)
 
 ## Objetivo del proyecto 
 
