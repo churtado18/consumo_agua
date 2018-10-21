@@ -11,10 +11,10 @@ Abstración de los datos
 Identificar Insight
 
 ## Tecnologías usadas
-Sublime Text
-D3 Vega Lite
-Jupyter - Pandas
-Wampserver
+Sublime Text    
+D3 Vega Lite   
+Jupyter - Pandas   
+Wampserver   
 
 ## Ejecución
 
